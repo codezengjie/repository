@@ -7,8 +7,8 @@ hero:
   text: "知识永无止境"
   tagline: show me the code.
   image:
-    src: /public/知识库.svg
-    alt: VitePress
+    src: /知识库.svg
+    alt: 知识库
   actions:
     - theme: brand
       text: 关于知识库

@@ -7,6 +7,7 @@ export default defineConfig({
   head: [
     ['link',{rel:'icon',href:'/public/知识库.svg'}], 
   ],
+  base: "/repository/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/public/知识库.svg',
