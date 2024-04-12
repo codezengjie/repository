@@ -5,7 +5,7 @@ export default defineConfig({
   title: "知识库",
   description: "知识永无止境",
   head: [
-    ['link',{rel:'icon',href:'知识库.svg'}], 
+    ['link', { rel: 'icon', href: '知识库.svg' }],
   ],
   base: "/repository/",
   themeConfig: {
@@ -13,18 +13,24 @@ export default defineConfig({
     logo: '知识库.svg',
     nav: [
       { text: '主站', link: '/' },
-      { text: '技术进阶',
-        items: [  
+      {
+        text: '技术进阶',
+        items: [
           { text: 'GIT版本管理', link: '/technology/git' },
           { text: 'Drools规则引擎', link: '/technology/drools' },
         ]
       },
-      { text: 'DevOps', link: ''},
-      { text: '标签管理', link: ''},
+      {
+        text: '项目管理',
+        items: [
+          { text: '价值交付系统', link: '/management/system-for-value-delivery' },
+        ]
+      },
+      { text: '标签管理', link: '' },
     ],
 
     sidebar: {
-      '/technology/' :[
+      '/technology/': [
         {
           text: '技术进阶',
           link: '/technology/',
@@ -34,11 +40,13 @@ export default defineConfig({
           ]
         }
       ],
-      '/DevOps/' :[
+      '/management/': [
         {
-          text: 'DevOps',
-          link: '/DevOps/',
-          items: []
+          text: '项目管理',
+          link: '/management/',
+          items: [
+            { text: '价值交付系统', link: '/management/system-for-value-delivery' },
+          ]
         }
       ]
     },
