@@ -24,7 +24,7 @@ export default defineConfig({
     sidebar: {
       '/technology/': [
         {
-          text: '技术进阶',
+          text: '技术笔记',
           link: '/technology/',
           items: [
             {
