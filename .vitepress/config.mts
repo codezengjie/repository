@@ -14,19 +14,11 @@ export default defineConfig({
     nav: [
       { text: '主站', link: '/' },
       {
-        text: '技术进阶',
-        items: [
-          { text: 'GIT版本管理', link: '/technology/git' },
-          { text: 'Drools规则引擎', link: '/technology/drools' },
-        ]
+        text: '技术笔记', link: '/technology/'
       },
       {
-        text: '项目管理',
-        items: [
-          { text: '价值交付系统', link: '/management/system-for-value-delivery' },
-        ]
-      },
-      { text: '标签管理', link: '' },
+        text: '项目管理', link: '/management/'
+      }
     ],
 
     sidebar: {
@@ -35,8 +27,20 @@ export default defineConfig({
           text: '技术进阶',
           link: '/technology/',
           items: [
-            { text: 'GIT版本管理', link: '/technology/git' },
-            { text: 'Drools规则引擎', link: '/technology/drools' },
+            {
+              text: '版本管理',
+              collapsed: true,
+              items: [
+                { text: 'GIT版本管理', link: '/technology/git' },
+              ]
+            },
+            {
+              text: '基础架构',
+              collapsed: true,
+              items: [
+                { text: 'Drools规则引擎', link: '/technology/drools' },
+              ]
+            }
           ]
         }
       ],
