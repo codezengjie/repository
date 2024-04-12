@@ -5,12 +5,12 @@ export default defineConfig({
   title: "知识库",
   description: "知识永无止境",
   head: [
-    ['link',{rel:'icon',href:'/public/知识库.svg'}], 
+    ['link',{rel:'icon',href:'知识库.svg'}], 
   ],
   base: "/repository/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: '/public/知识库.svg',
+    logo: '知识库.svg',
     nav: [
       { text: '主站', link: '/' },
       { text: '后端',
