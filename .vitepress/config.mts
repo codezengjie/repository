@@ -13,51 +13,34 @@ export default defineConfig({
     logo: '知识库.svg',
     nav: [
       { text: '主站', link: '/' },
-      { text: '后端',
+      { text: '技术进阶',
         items: [  
-          { text: 'GIT版本管理', link: '/backend/git' },  
+          { text: 'GIT版本管理', link: '/technology/git' },
+          { text: 'Drools规则引擎', link: '/technology/drools' },
         ]
       },
-      { text: '中间件',
-        items: [  
-          { text: 'Drools', link: '/middleware/drools' },  
-        ]
-      },
-      { text: '前端', 
-        items: [  
-          { text: 'vue3', link: '/frontend/vue3' },  
-        ]
-      },
+      { text: 'DevOps', link: ''},
+      { text: '标签管理', link: ''},
     ],
 
     sidebar: {
-      '/backend/' :[
+      '/technology/' :[
         {
-          text: '后端',
-          link: '/backend/',
+          text: '技术进阶',
+          link: '/technology/',
           items: [
-            { text: 'GIT版本管理', link: '/backend/git' },
+            { text: 'GIT版本管理', link: '/technology/git' },
+            { text: 'Drools规则引擎', link: '/technology/drools' },
           ]
         }
       ],
-      '/middleware/' :[
+      '/DevOps/' :[
         {
-          text: '中间件',
-          link: '/middleware/',
-          items: [
-            { text: 'Drools', link: '/middleware/drools' },
-          ]
+          text: 'DevOps',
+          link: '/DevOps/',
+          items: []
         }
-      ],
-      '/frontend/' :[
-        {
-          text: '前端',
-          link: '/frontend/',
-          items: [
-            { text: 'vue3', link: '/frontend/vue3' },
-          ]
-        }
-      ],
+      ]
     },
 
     socialLinks: [
