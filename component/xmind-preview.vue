@@ -4,6 +4,7 @@
 
 <script setup>
 import { onMounted } from "vue";
+import { withBase } from 'vitepress'
 
 const props = defineProps({
   xmindFilePath: {
@@ -22,7 +23,7 @@ onMounted(async () => {
       el: '#xmind',
       region: 'cn'
     });
-    fetch(props.xmindFilePath)
+    fetch(withBase(props.xmindFilePath))
       .then(res => res.arrayBuffer())
       .then(file => viewer.load(file));
   };
