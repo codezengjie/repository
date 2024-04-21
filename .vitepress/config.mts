@@ -8,9 +8,6 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '知识库.svg' }],
   ],
   base: "/repository/",
-  vite: {
-    assetsInclude: ['**/*.xmind']
-  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '知识库.svg',
