@@ -50,8 +50,13 @@ export default defineConfig({
           link: '/management/',
           items: [
             { text: '价值交付系统', link: '/management/system-for-value-delivery' },
+            { text: '项目管理原则', link: '/management/project-management-principle' },
+            { text: '项目绩效域', link: '/management/project-performance-domain' },
+            { text: '项目裁剪', link: '/management/project-tailoring' },
+            { text: '模型,方法及工件', link: '/management/model-method-artifacts' },
+            { text: '敏捷管理', link: '/management/agile-management' },
           ]
-        }
+        },
       ]
     },
 
