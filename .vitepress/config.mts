@@ -35,7 +35,7 @@ export default defineConfig({
               ]
             },
             {
-              text: '基础架构',
+              text: '技术框架',
               collapsed: true,
               items: [
                 { text: 'Drools规则引擎', link: '/technology/drools' },
